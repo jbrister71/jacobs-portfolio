@@ -1,0 +1,39 @@
+:root {
+    --secondary-color: #2b8f92;
+}
+
+body {
+    background-color: rgb(125, 158, 177);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #242323;
+}
+
+header h1 {
+    padding: 5px 15px 5px 100px;
+    background-color: var(--secondary-color);
+    font-size: 40px;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    padding-top: 25px;
+}
+
+header nav ul li a {
+    margin: 10px;
+    border-bottom: 3px solid var(--secondary-color);
+    padding: 0 10px 0 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
