@@ -1,5 +1,6 @@
 :root {
     --secondary-color: #2b8f92;
+    --tertiary-color: #242323;
 }
 
 body {
@@ -9,7 +10,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    background-color: #242323;
+    background-color: var(--tertiary-color);;
 }
 
 header h1 {
@@ -36,4 +37,39 @@ header nav ul li a {
     font-weight: bold;
     color: var(--secondary-color);
     text-decoration: none;
+}
+
+.hero {
+    background-image: none;
+    position: relative;
+    padding: 100px;
+}
+
+.hero h2 {
+    padding: 5px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    right: 200px;
+}
+
+.content-section {
+    display: flex;
+}
+
+.content-section h3 {
+    margin-left: 25px;
+    font-size: 50px;
+    text-align: right;
+    padding-right: 15px;
+}
+
+.content {
+    margin-top: 30px;
+    border-left: 5px solid var(--tertiary-color);
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.content p {
+    font-size: 20px;
 }
