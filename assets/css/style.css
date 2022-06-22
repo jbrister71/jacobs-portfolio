@@ -4,13 +4,15 @@
 }
 
 body {
+    margin: 0;
     background-color: rgb(125, 158, 177);
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    background-color: var(--tertiary-color);;
+    background-color: var(--tertiary-color);
+    width: 100%
 }
 
 header h1 {
@@ -20,6 +22,7 @@ header h1 {
 }
 
 header nav {
+    margin: 0;
     display: flex;
 }
 
@@ -57,19 +60,48 @@ header nav ul li a {
 }
 
 .content-section h3 {
-    margin-left: 25px;
+    width: 10%;
     font-size: 50px;
     text-align: right;
     padding-right: 15px;
+    padding-left: 50px
 }
 
 .content {
+    width: 75%;
     margin-top: 30px;
+    margin-left: 20px;
     border-left: 5px solid var(--tertiary-color);
     padding-top: 5px;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 .content p {
     font-size: 20px;
+}
+
+.main-work img {
+    width: 91%;
+    border: 5px solid var(--secondary-color);
+}
+
+.other-work img {
+    width: 45%;
+    border: 5px solid var(--secondary-color);
+}
+
+.content ul {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-top: 50px;
+    padding-left: 30px;
+}
+
+.content ul li a {
+    font-size: 40px;
+    text-decoration: none;
+    color: var(--tertiary-color);
+    border-bottom: 3px solid var(--tertiary-color);
 }
