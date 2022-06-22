@@ -80,6 +80,14 @@ header nav ul li a {
     font-size: 20px;
 }
 
+ #work div img {
+    opacity: .5;
+}
+
+#work div img:hover {
+    opacity: 1;
+}
+
 .main-work img {
     width: 91%;
     border: 5px solid var(--secondary-color);
