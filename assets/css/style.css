@@ -3,6 +3,8 @@
     --tertiary-color: #242323;
 }
 
+
+/* Margins set here so that the header borders the top of the screen but the contact me section doesn't border the bottom */
 body {
     margin: 0 0 5px 0;
     background-color: rgb(125, 158, 177);
@@ -16,12 +18,15 @@ header {
     width: 100%
 }
 
+/*Displays my name in a section seperate from the rest of the header*/
+
 header h1 {
     padding: 5px 15px 5px 100px;
     background-color: var(--secondary-color);
     font-size: 40px;
 }
 
+/*sets up a nav for the sections of the website and a fourth for a future resume addition*/
 header nav {
     margin: 0;
     display: flex;
@@ -63,6 +68,7 @@ header nav ul li a {
     display: flex;
 }
 
+/*sets the sections titles to be on their own on the left side of the screen and the content on the right*/
 .content-section h3 {
     flex: 0 1 10%;
     font-size: 3vw;
@@ -84,6 +90,7 @@ header nav ul li a {
     font-size: 20px;
 }
 
+/*The images links will appear transparent until the user hovers the link*/
 .work div img {
     opacity: .5;
 }
@@ -100,6 +107,7 @@ header nav ul li a {
     position: relative;
 }
 
+/*Sets up and positions the labels for the work image links. I think there's a better way to do this as I couldn't modify font sizes using this method.*/
 .work-info {
     padding: 0 15px 0 15px;
     position: absolute;
@@ -128,6 +136,9 @@ header nav ul li a {
     margin: 15px 0 5px 0;
 }
 
+
+/*The following is used to make the first work appear larger than the rest.
+I failed to find values that made them perfectly line up at all sizes, but this worked for my monitor.*/
 .main-work img {
     width: 91%;
     border: 5px solid var(--secondary-color);
@@ -138,6 +149,7 @@ header nav ul li a {
     border: 5px solid var(--secondary-color);
 }
 
+/* Set up for the contact me links at the bottom of the page. */
 .content ul {
     flex: 0 0 95%;
     display: flex;
@@ -155,6 +167,7 @@ header nav ul li a {
     border-bottom: 3px solid var(--tertiary-color);
 }
 
+/* My initial attempt at media queries. I couldn't get the effects I was going for to work and was running low on time, so I left this as is to focus on other things. */
 @media screen and (max-width: 980px) {
     header {
         padding-bottom: 0;
